@@ -75,21 +75,24 @@ public class Main {
 		
 		System.out.println("Primjer jednog switch case");
 		int key = -1;
-		System.out.println("------------Za rad sa switch case upisi 1----------");
-		System.out.println("------------Za zavrsetak programa upisi 0----------");
-		key = in.nextInt();
-		switch (key) {
-			case 1:
-				caseFunc.radiNesto();
-				break;
-	
-			case 0:
-				System.exit(1);
-				break;
-				
-			default:
-				System.out.println(" NETACAN UNOS!!! POKUSAJ 1 ILI 0 ");
-				break;
+		while(key != 0) {
+			System.out.println("------------Za rad sa switch case upisi 1----------");
+			System.out.println("------------Za zavrsetak programa upisi 0----------");
+			key = in.nextInt();
+			switch (key) {
+				case 1:
+					caseFunc.radiNesto();
+					break;
+		
+				case 0:
+					System.out.println("Prijatan dan!");
+					System.exit(1);
+					break;
+					
+				default:
+					System.out.println(" NETACAN UNOS!!! POKUSAJ 1 ILI 0 ");
+					break;
+			}
 		}
 	}
 }
