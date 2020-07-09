@@ -50,6 +50,8 @@ public class Main {
 		//Pomocu petljaFunc cu pozivati funkcije koje se nalaze u toj klasi
 		ForPetlja petljaFunc = new ForPetlja();
 		WhilePetlja whilePetljaFunc = new WhilePetlja();
+		IfOdluke ifFunc = new IfOdluke();
+		
 		
 		//U nastavku cu samo pozivati klase koje cu praviti u novom fajlu, da ne natrpavam ovaj fajl previse.
 		int[] listaPrimjer = {2, 1, 33, 24, 123, 3231, 999}; 
@@ -57,6 +59,17 @@ public class Main {
 		petljaFunc.prolazSaRangeBased(listaPrimjer);
 		System.out.println("----------------ISPIS WHILE PETLJOM---------------");
 		whilePetljaFunc.prolazWhilePetljom(listaPrimjer);
+		System.out.println("---------------------------------------------------");
+		
+		ifFunc.brojJeParan(2);
+		ifFunc.brojJeParan(3);
+		ifFunc.brojJeParan(128);
+		ifFunc.brojJeParan(-5);
+		
+		System.out.println("---------------------------------------------------");
+		
+		ifFunc.brojJeParanLista(listaPrimjer);
+		
 		System.out.println("---------------------------------------------------");
 	}
 }
