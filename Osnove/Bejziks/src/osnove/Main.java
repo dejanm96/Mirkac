@@ -51,6 +51,7 @@ public class Main {
 		ForPetlja petljaFunc = new ForPetlja();
 		WhilePetlja whilePetljaFunc = new WhilePetlja();
 		IfOdluke ifFunc = new IfOdluke();
+		SwitchCaseOdluke caseFunc = new SwitchCaseOdluke();
 		
 		
 		//U nastavku cu samo pozivati klase koje cu praviti u novom fajlu, da ne natrpavam ovaj fajl previse.
@@ -71,5 +72,24 @@ public class Main {
 		ifFunc.brojJeParanLista(listaPrimjer);
 		
 		System.out.println("---------------------------------------------------");
+		
+		System.out.println("Primjer jednog switch case");
+		int key = -1;
+		System.out.println("------------Za rad sa switch case upisi 1----------");
+		System.out.println("------------Za zavrsetak programa upisi 0----------");
+		key = in.nextInt();
+		switch (key) {
+			case 1:
+				caseFunc.radiNesto();
+				break;
+	
+			case 0:
+				System.exit(1);
+				break;
+				
+			default:
+				System.out.println(" NETACAN UNOS!!! POKUSAJ 1 ILI 0 ");
+				break;
+		}
 	}
 }
