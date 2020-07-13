@@ -43,13 +43,21 @@ public class Main {
 		suma = (brojHljebova * cijenaHljeba) + (brojMesa * cijenaMesa) + (brojVode * cijenaVode) + (brojPiva * cijenaPiva);
 		
 		System.out.println("--------Vas racun je--------");
-		if(brojHljebova > 0) System.out.println(hljeb + " " + brojHljebova + "  x  " + cijenaHljeba + " KM = " + brojHljebova * cijenaHljeba + " KM");
-		System.out.println();
-		if(brojPiva > 0) System.out.println(pivo + " " + brojPiva + "  x  " + cijenaPiva + " KM = " + brojPiva * cijenaPiva + " KM");
-		System.out.println();
-		if(brojVode > 0) System.out.println(voda + " " + brojVode + "  x  " + cijenaVode + " KM = " + brojVode * cijenaVode + " KM");
-		System.out.println();
-		if(brojMesa > 0) System.out.println(meso + " " + brojMesa + "  x  " + cijenaMesa + " KM = " + brojMesa * cijenaMesa + " KM");
+		if(brojHljebova > 0) {
+			System.out.println(hljeb + " " + brojHljebova + "  x  " + cijenaHljeba + " KM = " + brojHljebova * cijenaHljeba + " KM");
+			System.out.println();
+		}
+		if(brojPiva > 0) {
+			System.out.println(pivo + " " + brojPiva + "  x  " + cijenaPiva + " KM = " + brojPiva * cijenaPiva + " KM");
+			System.out.println();
+		}
+		if(brojVode > 0) {
+			System.out.println(voda + " " + brojVode + "  x  " + cijenaVode + " KM = " + brojVode * cijenaVode + " KM");
+			System.out.println();
+		}
+		if(brojMesa > 0) {
+			System.out.println(meso + " " + brojMesa + "  x  " + cijenaMesa + " KM = " + brojMesa * cijenaMesa + " KM");
+		}
 
 
 		System.out.println("----------------------------");
