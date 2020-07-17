@@ -86,7 +86,7 @@ public class Main {
 		
 				case 0:
 					System.out.println("Prijatan dan!");
-					System.exit(1);
+					System.exit(0);
 					break;
 					
 				default:
