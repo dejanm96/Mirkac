@@ -87,7 +87,7 @@ public class KvizZnanja {
 			i = input.nextInt();
 			if(brojPokusaja > 0 ) System.out.println("broj pokusaja je : " + brojPokusaja);
 			if(brojPokusaja >= 2) { System.out.println("DOSTIGNUT JE MAX BROJ POKUSAJA");
-			System.exit(0);
+			pitanjeCetiri();
 			}else
 			switch (i) {
 			case 1:
@@ -122,7 +122,7 @@ public class KvizZnanja {
 			i = input.nextInt();
 			if(brojPokusaja > 0 ) System.out.println("broj pokusaja je : " + brojPokusaja);
 			if(brojPokusaja >= 2) { System.out.println("DOSTIGNUT JE MAX BROJ POKUSAJA");
-			System.exit(0);
+			pitanjePet();
 			}else
 			switch (i) {
 			case 1:
@@ -151,6 +151,30 @@ public class KvizZnanja {
 	}
 	private static void pitanjePet() {
 		int i = -1;
+		while(i != 0) {
+			System.out.println("Koji dio se ispunjava u sledecem if-statementu?"+
+								"boolean yes = true; if(yes) System.out.println('Tacno'); else System.out.println('Netacno');");
+			System.out.println("1. tacno");
+			System.out.println("2. netacno");	
+			i = input.nextInt();
+			switch (i) {
+			case 1:
+				System.out.println("TACAN ODGOVOR!");
+				brojTacnihOdgovora++;
+				pitanjeSest();
+				i = 0;
+				break;
+			case 2: 
+				System.out.println("Pokusaj ponovo");
+				break;
+			default:
+				System.out.println("pogresan unos");
+				break;
+			}
+		}
+	}
+	private static void pitanjeSest() {
+		int i = -1;
 		int brojPokusaja = 1;
 		while(i != 0) {
 			System.out.println("Koji oblik nije ispravno napisana boolean varijabla?");
@@ -174,12 +198,12 @@ public class KvizZnanja {
 			case 3: 
 				System.out.println("TACAN ODGOVOR!");
 				brojTacnihOdgovora++;
-				System.out.println("broj tacnih odgovora: " + brojTacnihOdgovora + " od ukupno 5");
-				if(brojTacnihOdgovora == 0 || brojTacnihOdgovora == 1) System.out.println("PONOVI GRADIVO PA PROBAJ OPET !!");
+				System.out.println("broj tacnih odgovora: " + brojTacnihOdgovora + " od ukupno 6");
+				if(brojTacnihOdgovora == 0 || brojTacnihOdgovora == 1 || brojTacnihOdgovora == 2 ) System.out.println("PONOVI GRADIVO PA PROBAJ OPET !!");
 				else
-				if(brojTacnihOdgovora == 2 || brojTacnihOdgovora == 3) System.out.println("Nije lose, nije lose!");
+				if(brojTacnihOdgovora == 3 || brojTacnihOdgovora == 4) System.out.println("Nije lose, nije lose!");
 				else
-				if(brojTacnihOdgovora == 4 || brojTacnihOdgovora == 5) System.out.println("SVAKA CAST, MOZEMO NASTAVIT SA UCENJEM!");
+				if(brojTacnihOdgovora == 5 || brojTacnihOdgovora == 6) System.out.println("SVAKA CAST, MOZEMO NASTAVIT SA UCENJEM!");
 				i = 0;
 				break;
 			default:
