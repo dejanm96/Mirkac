@@ -173,7 +173,41 @@ public class KvizZnanja {
 			}
 		}
 	}
+	
 	private static void pitanjeSest() {
+		int i = -1;
+		while(i != 0) {
+			System.out.println("sta od sledeceg nije komentar?");
+			System.out.println("1. //komentar");
+			System.out.println("2. /*komentar*/");
+			System.out.println("3. /**\r\n" + 
+					"	 * komentar\r\n" + 
+					"	 */");	
+			System.out.println("4. komentar//");
+			i = input.nextInt();
+			switch (i) {
+			case 1:
+				System.out.println("Pokusaj ponovo");
+				break;
+			case 2: 
+				System.out.println("Pokusaj ponovo");
+				break;
+			case 3:
+				System.out.println("Pokusaj ponovo");
+				break;
+			case 4:
+				System.out.println("TACAN ODGOVOR!");
+				brojTacnihOdgovora++;
+				pitanjeSedam();
+				i = 0;
+				break;
+			default:
+				System.out.println("pogresan unos");
+				break;
+			}
+		}
+	}
+	private static void pitanjeSedam() {
 		int i = -1;
 		int brojPokusaja = 1;
 		while(i != 0) {
@@ -198,12 +232,14 @@ public class KvizZnanja {
 			case 3: 
 				System.out.println("TACAN ODGOVOR!");
 				brojTacnihOdgovora++;
-				System.out.println("broj tacnih odgovora: " + brojTacnihOdgovora + " od ukupno 6");
+				System.out.println("broj tacnih odgovora: " + brojTacnihOdgovora + " od ukupno 7");
 				if(brojTacnihOdgovora == 0 || brojTacnihOdgovora == 1 || brojTacnihOdgovora == 2 ) System.out.println("PONOVI GRADIVO PA PROBAJ OPET !!");
 				else
 				if(brojTacnihOdgovora == 3 || brojTacnihOdgovora == 4) System.out.println("Nije lose, nije lose!");
 				else
 				if(brojTacnihOdgovora == 5 || brojTacnihOdgovora == 6) System.out.println("SVAKA CAST, MOZEMO NASTAVIT SA UCENJEM!");
+				else
+				if(brojTacnihOdgovora == 7) System.out.println("PREKUCAO SI !");
 				i = 0;
 				break;
 			default:
