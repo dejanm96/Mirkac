@@ -76,7 +76,7 @@ public class KvizZnanja {
 			}
 		}
 	}
-	private static void pitanjeTri() {
+	public static void pitanjeTri() {
 		int i = -1;
 		int brojPokusaja = 1;
 		while(i != 0) {
@@ -110,7 +110,7 @@ public class KvizZnanja {
 			}
 		}
 	}
-	private static void pitanjeCetiri() {
+	public static void pitanjeCetiri() {
 		int i = -1;
 		int brojPokusaja = 1;
 		while(i != 0) {
@@ -149,7 +149,7 @@ public class KvizZnanja {
 			}
 		}
 	}
-	private static void pitanjePet() {
+	public static void pitanjePet() {
 		int i = -1;
 		while(i != 0) {
 			System.out.println("Koji dio se ispunjava u sledecem if-statementu?"+
@@ -174,7 +174,7 @@ public class KvizZnanja {
 		}
 	}
 	
-	private static void pitanjeSest() {
+	public static void pitanjeSest() {
 		int i = -1;
 		while(i != 0) {
 			System.out.println("sta od sledeceg nije komentar?");
@@ -207,7 +207,7 @@ public class KvizZnanja {
 			}
 		}
 	}
-	private static void pitanjeSedam() {
+	public static void pitanjeSedam() {
 		int i = -1;
 		int brojPokusaja = 1;
 		while(i != 0) {
